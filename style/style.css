@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #0a0f1f;
+    --primary-color: #2196f3;
+    --secondary-color: #64b5f6;
+    --text-color: #e3f2fd;
+    --accent-color: #102040;
+    --border-color: #2196f355;
+    --highlight-color: #ffffff;
+    --font-main: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+header {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+
+h2, h3 {
+    color: var(--highlight-color);
+    margin: 20px 0 10px;
+}
+
+p, li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 2px solid var(--border-color);
+    padding: 15px 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #182b4d;
+    box-shadow: 0 0 10px #2196f355;
+}
+
+
+legend {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: var(--secondary-color);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 6px 8px;
+    background-color: #243b60;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9em;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+b {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: var(--highlight-color);
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}
